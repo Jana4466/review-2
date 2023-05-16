@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+}
+.s{
+    margin-left: 700px;
+}
+fieldset{
+    width: .5px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,50 @@
+<html>
+    <link rel="stylesheet" href="Re8.css"
+<body>
+  <h1>Admission Form Preview</h1>
+  
+  <div class="form-field">
+    <label>Name:</label>
+    <input type="text" name="firstname" size="15"/> <br> <br> 
+  </div>
+  
+  <div class="form-field">
+    <label >Email:</label>
+    <input type="text" name="firstname" size="15"/> <br> <br> 
+  </div>
+  
+  <div class="form-field">
+    <label>Phone:</label>
+    <input type="text" name="firstname" size="15"/> <br> <br> 
+  </div>
+  
+  <div class="form-field">
+    <label >Course:</label>
+    <input type="text" name="firstname" size="15"/> <br> <br> 
+  </div>
+  
+  <div class="form-field">
+    <label >Message:</label>
+    <input type="text" name="firstname" size="15"/> <br> <br> 
+  </div>
+  <div>
+  <a href="Re9.html"><button class="button" onclick="submitForm()">Submit</button></a>
+</div>
+  <script>
+    function submitForm() {
+      alert('Form submitted!');
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const email = urlParams.get('email');
+    const phone = urlParams.get('phone');
+    const course = urlParams.get('course');
+    const message = urlParams.get('message');
+    document.getElementById('name-preview').textContent = name;
+    document.getElementById('email-preview').textContent = email;
+    document.getElementById('phone-preview').textContent = phone;
+    document.getElementById('course-preview').textContent = course;
+    document.getElementById('message-preview').textContent = message;
+  </script>
+</body>
+</html>
